@@ -91,19 +91,12 @@ a {
 
   /* 6) Курсор «рука» при наведении */
   cursor: pointer;
-
-  /* Дополнительно сбросим стандартную рамку/отступы */
-  border: none;
-  padding: 12px 24px;
-  border-radius: 4px; /* если хочешь скруглить углы */
-  transition: background-color 0.2s ease; /* чтобы фон плавно менялся */
 }
 
 /* 7) При hover и focus: фон становится #404BFF */
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bff;
-  outline: none; /* опционально, чтобы убрать обводку при фокусе */
 }
 
 .title {
@@ -130,6 +123,7 @@ a {
   background: #f4f4fd;
 }
 .our-team {
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
 
@@ -165,6 +159,7 @@ a {
 /* Примеры правильно заданных имён классов: feature-item, item-01, features_li, liitem */
 
 .portfolio-title {
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
 
