@@ -96,7 +96,7 @@ a {
 /* 7) При hover и focus: фон становится #404BFF */
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bff;
+  background-color: #404bbf;
 }
 
 .title {
