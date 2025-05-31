@@ -71,18 +71,45 @@ a {
   color: #fff;
 }
 /* кнопка правильно написана */
-.btn {
+.hero-btn {
+  /* 1) Семейство шрифтов */
+  font-family: 'Roboto', sans-serif;
+
+  /* 2) Жирность и размер */
   font-weight: 500;
   font-size: 16px;
 
-  /* line-height: 24px; */
+  /* 3) Межстрочный интервал и межбуквенный кернинг */
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  /* 4) Цвет текста */
   color: #fff;
+
+  /* 5) Фоновый цвет кнопки (базовый) */
+  background-color: #4d5ae5;
+
+  /* 6) Курсор «рука» при наведении */
+  cursor: pointer;
+
+  /* Дополнительно сбросим стандартную рамку/отступы */
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px; /* если хочешь скруглить углы */
+  transition: background-color 0.2s ease; /* чтобы фон плавно менялся */
 }
+
+/* 7) При hover и focus: фон становится #404BFF */
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bff;
+  outline: none; /* опционально, чтобы убрать обводку при фокусе */
+}
+
 .title {
   font-weight: 500;
   font-size: 20px;
+  text-transform: capitalize;
 
   /* line-height: 24px; */
   line-height: 1.2;
@@ -112,6 +139,9 @@ a {
   text-align: center;
   color: #2e2f42;
 }
+.team-list-item {
+  background-color: #fff;
+}
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -132,7 +162,9 @@ a {
   text-align: center;
   color: #434455;
 }
-.porfolio-title {
+/* Примеры правильно заданных имён классов: feature-item, item-01, features_li, liitem */
+
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
 
